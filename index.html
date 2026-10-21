@@ -1,52 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colerica Carinhosa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="img/logotipo.png">
+    <title> Colérica Carinhosa</title>
 </head>
 
 <body>
-    <!-- div conteiner que limita a largura do conteúdo-->
+
+    <!-- div conteiner que limita a largura do 
+    conteúdo e permite outros efeitos. -->
     <div id="wrap">
 
-        <!-- Cabeçalho-->
+        <!-- Cabeçalho -->
         <header>
-            <!--Logotipo clicável para página inicial-->
-            <a href="index.html"><img src="Imagem/logotipo.png" alt="Logo sapinho"></a>
+            <div>
+                <!-- Logotipo clicável para a página inicial -->
+                <a href="index.html"><img src="img/Prin.png" alt="Logotipo do First Front"></a>
 
-            <h1>Colérica Carinhosa</h1>
+                <h1>Colérica<br>Carinhosa</h1>
+            </div>
 
-            <!--Formulário de pesquisa no site-->
+            <!-- Formulário de pesquisa no site -->
             <form action="https://www.google.com/search" method="get" target="_blank">
                 <input type="search" name="q" required>
-                <button type="submit">🔎</button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw fa-flip-horizontal"></i></button>
             </form>
         </header>
 
-        <hr>
-
-        <!--Menu principal-->
+        <!-- Menu principal -->
         <nav>
-            <a href="exp2.html">Início</a>
-            <a href="conteudo.html">Conteúdo</a>
-            <a href="contatos.html">Contatos</a>
-            <a href="sobre.html">Sobre</a>
+            <a href="index.html" title="Página Inicial"> 
+                <i class="fa-solid fa-house fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="conteudo.html" title="Nosso conteúdo">
+                <i class="fa-solid fa-mug-hot fa-fw"></i>
+                <span>Conteúdo</span>
+            </a>
+            <a href="contatos.html" title="Entre em contato">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="sobre.html" title="Sobre mim">
+                <i class="fa-solid fa-circle-info fa-fw"></i>
+                <span>Sobre</span>
+            </a>
         </nav>
-
-        <hr>
-
 
         <main>
 
-            <!-- Conteúdo Inicial-->
+            <!-- 
+            Conteúdo principal.
+            No futuro, será gerado pelo back-end.
+            -->
             <section>
 
                 <h2>Página Inicial</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut pariatur optio. Quidem velit
-                    molestias cumque, minima nam facilis corporis debitis suscipit sapiente, molestiae minus aut! Rem,
-                    dicta error! Libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur dicta provident
+                    aliquid harum ullam eveniet, sit, rerum nostrum tenetur impedit minus saepe mollitia voluptate fuga
+                    velit ratione tempora quae?</p>
                 <p>Links úteis:</p>
 
                 <!-- 
@@ -54,52 +71,48 @@
                 Use o atributo target="_blank" para abrir o link em outra guia
                 -->
                 <ul>
-                    <li><a href="https://google.com" target="_black">Google</a></li>
-                    <li><a href="https://www.instagram.com/ellenevanns/" target="_black">Instagram</a></li>
-                    <li><a href="https://www.tiktok.com/@ellenevanns" target="_black">Tiktok</a></li>
+                    <li><a href="https://google.com" target="_blank">Google</a></li>
+                    <li><a href="https://links.lufer.click" target="_blank">Traquitanas</a></li>
+                    <li><a href="https://www.rj.senac.br" target="_blank">Senac</a></li>
                 </ul>
 
-                <h3>Mais sobre mim</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus reiciendis dolorum vero optio
-                    repellendus, eaque magni voluptatum consequatur explicabo quod iste vitae doloremque eligendi atque
-                    dolores consectetur aperiam libero voluptatibus.</p>
+                <h3>Mais sobre alguma coisa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime non odio dolorum in vero
+                    neque a magnam delectus, natus amet architecto repudiandae nisi consequatur eaque deserunt sequi
+                    repellendus debitis?</p>
 
-                <p>Imagem externa</p>
-                <img src="https://picsum.photos/400/300" alt="Imagem surpresa pra você">
+                <h4>Imagem externa</h4>
+                <img class="responsive" src="https://picsum.photos/400/300" alt="Imagem aleatória">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error qui, esse perferendis quaerat
-                    odit, consectetur dignissimos eum mollitia distinctio eos earum? Tempora, incidunt minus. Sapiente,
-                    assumenda nihil. Veritatis, aperiam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis. Ipsum, doloremque, itaque
+                    inventore est ipsa neque nobis alias quaerat vitae saepe dolore aliquid soluta optio at quos
+                    suscipit aspernatur!</p>
 
-                <h4>imagem interna</h4>
-                <img src="Imagem/Sapo.png" alt="Sapinho">
+                <h4>Imagem interna</h4>
+                <!-- A imagem esta na pasta "img". Atenção a este detalhe. -->
+                <img class="responsive" src="img/Sapo.png" alt="Sapinho">
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat cum quos temporibus nobis! Quo
-                    soluta laboriosam sunt at porro repellendus a dolorem nihil eum, sed ratione rem facere voluptates.
-                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto autem laudantium non debitis
+                    voluptates alias. Facere, molestiae voluptatum! Nostrum ipsa natus praesentium eos hic mollitia
+                    similique? Maiores, suscipit distinctio!</p>
 
             </section>
 
-            <!-- Conteúdo complementar-->
+            <!-- Conteúdo complementar -->
             <aside>
                 <h3>Mais coisas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus optio ab facilis quo impedit
-                    earum consequatur, voluptas dolorum deleniti nulla sit et molestiae accusamus illum eaque commodi
-                    sed magnam quod!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nostrum doloribus inventore
+                    asperiores cumque nulla.</p>
             </aside>
-
 
         </main>
 
-        <hr>
-
         <!-- rodapé -->
         <footer>
-<a href="index.html">🏡</a>
+            <a href="index.html" title="Ir para a página inicial"><i class="fa-solid fa-house fa-fw"></i></a>
             <div>&copy; 2026 Ellen Evangelista</div>
-            <a href="#top">⬆️</a>
+            <a href="#top" title="Ir para o topo da página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
         </footer>
-
 
     </div>
 
