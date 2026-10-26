@@ -17,7 +17,7 @@ mesmo com diferenças entre navegadores.
 /* Todos links */
 a {
     text-decoration: none;
-    color: steelblue;
+    color: rgb(5, 77, 136);
 }
 
 /* Todos os links com ponteiro sobre */
@@ -41,10 +41,11 @@ O atributo acima define uma unidade "rem".
 Iso significa que 1rem = 16px, .5rem = 8px, 2rem = 32px
 */
 
-  /* Sticky footer */
+    /* Sticky footer */
     min-height: 100%;
 
 }
+
 /* Fundo da página */
 body {
     background-image: url('../img/BG.png');
@@ -54,6 +55,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* Remove margens fos titulos. */
 h1,
 h2,
@@ -67,19 +69,20 @@ h6 {
 
 /***** Elemento wrap ****/
 
-#wrap { 
+#wrap {
     /* Sticky footer*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 
-     /* Largura máxima do conteúdo */
+    /* Largura máxima do conteúdo */
     max-width: 1024px;
 
     /* Centraliza */
     margin: auto;
 
 }
+
 /***** Cabeçalho *****/
 
 /* Seleciona o elemento "header" que é filho direto do emelento div#wrap */
@@ -142,11 +145,12 @@ h6 {
     padding: 0;
     padding-left: .85rem;
 }
+
 /***** Menu principal *****/
 #wrap>nav {
     background-color: rgb(0, 0, 0);
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 
@@ -174,6 +178,7 @@ h6 {
     color: rgb(71, 6, 71);
 
 }
+
 #wrap>nav i {
     font-size: 1.4rem;
 
@@ -183,8 +188,8 @@ h6 {
 
 #wrap>footer {
     background-color: rgba(124, 22, 22, 0.014);
-    color:#fff;
-    display:flex;
+    color: #fff;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid white;
@@ -223,16 +228,15 @@ h6 {
 #wrapa>main article {
     padding: 0 1.5rem;
     background-color: rgb(192, 145, 204);
-
-/* Sticky footer */
-flex: 1;
-
+    /* Sticky footer */
+    flex: 1;
 }
 
 #wrap>main aside {
-    background-color: rgba(172, 119, 177, 0.9); 
+    background-color: rgba(172, 119, 177, 0.9);
     padding: 0 1rem;
 }
+
 /***** Classes de uso geral *****/
 
 /* Imagens responsivas */
@@ -265,14 +269,14 @@ img.responsive {
 
 /**** HEADER ****/
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
 
     #wrap>header {
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
-  }
+    }
 
 }
 
@@ -303,9 +307,14 @@ img.responsive {
         flex-direction: row;
     }
 
+    #wrap>main article {
+        flex-grow: 1;
+    }
+
+
     #wrap>main aside {
         flex-basis: 250px;
-    /*Hack caso "flex-basics" falhe! */
+        /*Hack caso "flex-basics" falhe! */
         min-width: 250px;
         max-width: 250px;
     }
